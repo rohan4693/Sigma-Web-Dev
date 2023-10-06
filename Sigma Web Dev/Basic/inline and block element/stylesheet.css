@@ -1,0 +1,24 @@
+p{
+    background-color: aquamarine;
+}
+
+a{
+    background-color: rgb(241, 107, 172);
+}
+
+div{
+    background-color: rgb(252, 126, 94);
+}
+
+span{
+    background-color: rgb(255, 255, 0);
+}
+
+.redinbg{
+    background-color: rgb(0, 255, 255);
+    color: rgb(0, 0, 255);
+}
+
+#rohan2{
+    background-color: rgb(255, 0, 0);
+}
