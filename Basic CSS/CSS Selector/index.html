@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Selector</title>
+    <style>
+        /* element selector */
+        div{
+            background-color: rgb(174, 137, 137);
+        }
+        .red{
+            background-color: rgb(255, 0, 0);
+        }
+        #green{
+            background-color: rgb(0, 255, 0);
+        }
+        div > p{
+            background-color: rgb(255, 255, 0);
+        }
+        /* div p{
+            background-color: rgb(0, 0, 255);
+        } */
+        /* Universal selector */
+        *{
+            background-color: rgb(169, 169, 250);
+            padding: 0;
+            margin: 0;
+        }
+        /* pseudo selector */
+        a:visited{
+            background-color: rgb(179, 255, 0);
+            color: brown;
+        }
+        a:hover{
+            background-color: rgb(255, 0, 255);
+            color: rgb(255, 255, 255);
+        }
+        a:link{
+            background-color: rgb(191, 217, 22);
+            color: rgb(11, 168, 152);
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+        i am div
+    </div>
+    <div id="green">
+        <p>rohan here</p>
+        <article>
+            <p>not required</p>
+        </article>
+        second div
+    </div>
+    <a href="https:www.google.com">Google</a><br>
+    <a href="https:www.facebook.com">Facebook</a>
+</body>
+</html>
