@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid By Second Method</title>
+        <style>
+            .container {
+                display: grid;
+                grid-template-areas: "nav nav nav "
+                                        "main main main"
+                                        "footer footer footer";
+                grid-gap: 10px;
+                align-items: center;
+                justify-content: flex-end;
+            }
+            .item1 {
+                grid-area: nav;
+                background-color: rgb(175, 72, 72);
+            }
+            .item2 {
+                grid-area: nav;
+                background-color: rgb(162, 203, 131);
+                grid-column: 2/4;
+            }
+            .item3 {
+                grid-area: nav;
+                background-color: rgb(140, 145, 206);
+                grid-column: 3/4;
+            }
+            .item4 {
+                grid-area: main;
+                background-color: rgb(211, 177, 227);
+            }
+            .item5 {
+                grid-area: main;
+                background-color: rgb(141, 139, 95);
+            }
+            .item6 {
+                grid-area: footer;
+                background-color: rgb(95, 140, 141);
+            }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+    </div>
+</body>
+</html>
