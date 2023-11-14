@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .container {
+            background-color: black;
+            width: 50vw;
+            height: 50vh;
+        }
+
+        .box {
+            background-color: aquamarine;
+            width: 100px;
+            height: 100px;
+            animation-name: rohan;
+            animation-duration: 1.9s;
+            animation-iteration-count: 50;
+            animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+            animation-direction: alternate-reverse;
+            animation-fill-mode: forwards;
+
+        }
+
+        @keyframes rohan {
+            from {
+                background-color: cadetblue;
+            }
+
+            to {
+                background-color: blueviolet;
+                transform: translateX(90vw);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            I am a Rider
+        </div>
+    </div>
+</body>
+
+</html>
